@@ -38,10 +38,21 @@
     position: absolute;
     bottom: 0;
     left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.rocket>img{
+
+
+.rocket-img{
  
     height: 150px;
     padding: 10px;
+    z-index: 2;
    
+}
+
+.bullet{
+    position: absolute;
+    height: 25px;
 }
