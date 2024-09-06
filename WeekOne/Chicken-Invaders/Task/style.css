@@ -19,15 +19,13 @@
 }
 
 .chickens {
-    padding-top:50px;
+     padding-top:50px;
      width: 80%;
      display: flex;
      flex-wrap: wrap;
      justify-content: center; 
      align-items: center;
-   
-     
- }
+}
  
  
 .chickens > img{
