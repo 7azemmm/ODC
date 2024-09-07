@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/logo.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <section class="page">
+
+
+  
+    <nav class="navbar">
+
+       <div class="img">
+        <img src="./logo.jpg" alt="logo">
+        </div>
+
+        <div class="items">
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"> About-us </a></li>
+                <li><a href="#">pictures</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <div class="container">
+        <div class="image-gallery">
+            <img src="https://iili.io/HnylIxj.jpg"  alt="Country Gurl" class="main-image" id="mainImage">
+            <div class="thumbnail-container">
+                <img src="https://iili.io/HnylxDb.jpg" alt="Thumbnail 1" class="thumbnail">
+                <img src="https://iili.io/HnylTWx.jpg" alt="Thumbnail 2" class="thumbnail">
+                <img src="https://iili.io/HnyloOu.jpg" alt="Thumbnail 3" class="thumbnail">
+                <img src="https://iili.io/HnylIxj.jpg" alt="Thumbnail 4" class="thumbnail">
+            </div>
+        </div>
+        <div class="product-info">
+            <h1>country gurl</h1>
+            <div class="info-item"><span>Description:</span> Eyes have a language of their own</div>
+            <div class="info-item"><span>Dimensions:</span> 50x60</div>
+            <div class="info-item"><span>Background Material:</span> wood</div>
+            <div class="info-item"><span>Color Type:</span> oil colors</div>
+            <a href="#" class="cta-button" id="ctaButton">Click Here for Inquiries</a>
+        </div>
+    </div>
+
+ 
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-img">
+                    <img src="./logo.jpg" alt="Company Logo">
+                </div>
+                <div class="footer-text">
+                    <p>Lorem ipsu maiores molestias ipsum sequi obcaecati, earum quis! Debitis nobis ratione, voluptas neque sunt quia. Porro rem doloribus ipsam sit.</p>
+                </div>
+            </div>
+            <div class="contact-info">
+                <h2>CONTACT INFO</h2>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">
+                        <img src="./2023_Facebook_icon.svg.png" alt="Facebook">
+                    </a>
+                    <a href="#" class="social-icon">
+                        <img src="./images.jpeg" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h2>Contact Info</h2>
+                <p>Email: info@example.com</p>
+                <p>Phone: +1 234 567 8900</p>
+                <p>Address: 123 Street, City, Country</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Company Name. All rights reserved.</p>
+        </div>
+    </footer>
+    
+
+</section>
+
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mainImage = document.getElementById('mainImage');
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            const ctaButton = document.getElementById('ctaButton');
+
+            thumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', function() {
+                    mainImage.src = this.src.replace('80x80', '400x400');
+                    thumbnails.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+
+            ctaButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                alert('Thank you for your interest! We will contact you soon.');
+            });
+        });
+    </script>
+
+    
+</body>
+</html>
