@@ -1,0 +1,11 @@
+typescript
+
+
+
+--- identify type for js  -- eleminate errors -- act as extension for js 
+
+ng generate component component-name
+
+data binding -- string interpolation
+
+
