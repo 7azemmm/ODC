@@ -1,0 +1,21 @@
+#showcase {
+    min-height: 400px;
+    background: url('https://picsum.photos/1200/400') no-repeat center center/cover;
+    text-align: center;
+    color: #000000;
+}
+
+#showcase h1 {
+    /* margin-top: 100px; */
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+/* Main content */
+#main {
+    margin-top: 20px;
+}

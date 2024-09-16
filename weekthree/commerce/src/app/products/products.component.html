@@ -1,0 +1,17 @@
+<div class="product-container">
+    
+        @for(product of product_arr; track $index){
+        <div class="product-card">
+            <img src={{product.image}} alt={{product.title}} class="product-image">
+            <div class="product-info">
+                <h2 class="product-title">{{product.title}}</h2>
+                <p class="product-price">{{product.price}}</p>
+                <p class="product-description">{{product.description}}</p>
+                <a href="products/{{product.id}}" class="buy-button">Buy Now</a>
+            </div>
+        </div>
+
+        }
+        
+   
+</div>
