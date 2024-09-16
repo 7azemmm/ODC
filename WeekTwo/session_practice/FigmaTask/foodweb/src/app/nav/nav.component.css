@@ -1,0 +1,64 @@
+
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+
+.logo h4 {
+    margin: 0; 
+}
+
+
+.items {
+    display: flex;
+    align-items: center;
+}
+
+
+.items > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; 
+}
+
+
+.items > ul > li {
+    margin: 0 10px; 
+}
+
+
+.items > ul > li > a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px; 
+    border-radius: 4px; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+/* Add hover effects for links */
+.items > ul > li > a:hover,
+.items > ul > li > a:focus {
+    background-color: #333; /* Slightly lighter background on hover */
+    color: #f0f0f0; /* Lighter text color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+       
+    }
+}

@@ -1,7 +1,27 @@
+<br>
+<br>
+<h1 
+[style.background-color] = "isNight ? night : day " 
+[style.color]="isNight ? day : night"
 
- <div>
+> hello angular light and dark mode
 
-   <p>{{title}}</p>
-    <img src="./pexels-maxfrancis-2246476.jpg" style=" object-fit: cover;">
-    <button> click here</button>
- </div>
+
+</h1>
+
+<button (click)="counter()">{{count}}</button>
+
+<br>
+<br>
+
+
+<div class="container">
+  <div class="image-gallery">
+      <img [src]="mainImage"  alt="Country Gurl" class="main-image" id="mainImage">
+      <div class="thumbnail-container">
+          <img [src]="firstImage" alt="Thumbnail 1" class="thumbnail" (click)="sourceImage(firstImage)">
+          <img [src]="secondImage" alt="Thumbnail 2" class="thumbnail" (click)="sourceImage(secondImage)" >
+          <img [src]="thirdImage" alt="Thumbnail 3" class="thumbnail" (click)="sourceImage(thirdImage)">
+          <img [src]="fourthImage" alt="Thumbnail 4" class="thumbnail" (click)="sourceImage(fourthImage)">
+      </div>
+  </div>
